@@ -1,0 +1,16 @@
+{
+  "name": "file-splitter-syntax",
+  "version": "1.0.0",
+  "description": "Syntax that allows to group parts of a file by labels.",
+  "main": "src/file-splitter-syntax.js",
+  "scripts": {
+    "build-parser": "pegjs -o src/file-splitter-syntax.js src/file-splitter-syntax.pegjs",
+    "test": "node test/test-1.js"
+  },
+  "keywords": ["multifile","syntax"],
+  "author": "allnulled",
+  "license": "WTFPL",
+  "devDependencies": {
+    "pegjs": "^0.10.0"
+  }
+}

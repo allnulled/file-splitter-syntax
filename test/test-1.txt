@@ -1,0 +1,4 @@
+<## package.json ##>
+{}
+<## index.js ##>
+const contents = require("fs").readFileSync(__dirname + "/package.json").toString();
