@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Syntax that allows to group parts of a file by labels.",
   "main": "src/file-splitter-syntax.js",
+  "browser": "dist/file-splitter-syntax.browser.js",
   "scripts": {
-    "build-parser": "pegjs -o src/file-splitter-syntax.js src/file-splitter-syntax.pegjs",
+    "build-parser": "pegjs -o src/file-splitter-syntax.js src/file-splitter-syntax.pegjs && npm run build-parser-for-browser",
+    "build-parser-for-browser": "pegjs -o dist/file-splitter-syntax.browser.js --format globals --export-var FileSplitterParser src/file-splitter-syntax.pegjs",
     "test": "node test/test-1.js"
   },
   "keywords": [
