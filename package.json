@@ -7,10 +7,24 @@
     "build-parser": "pegjs -o src/file-splitter-syntax.js src/file-splitter-syntax.pegjs",
     "test": "node test/test-1.js"
   },
-  "keywords": ["multifile","syntax"],
+  "keywords": [
+    "multifile",
+    "syntax"
+  ],
   "author": "allnulled",
   "license": "WTFPL",
   "devDependencies": {
     "pegjs": "^0.10.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/file-splitter-syntax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allnulled/file-splitter-syntax/issues"
+  },
+  "homepage": "https://github.com/allnulled/file-splitter-syntax#readme"
 }
